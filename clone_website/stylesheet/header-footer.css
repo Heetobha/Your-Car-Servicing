@@ -1,0 +1,347 @@
+:root {
+    --color1: #8dc251;
+    --color2: gray;
+    --bg-color: white;
+
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    background-image: url("https://cdn.pixabay.com/photo/2018/09/20/22/23/auto-repair-3691963_960_720.jpg");
+    background-size: cover;
+    overflow-x: hidden;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(233, 227, 227, 0.9);
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+}
+
+header .right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+header .manu>ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}header .manu ul a {
+    text-decoration: none;
+    color: black;
+    padding: 4px 0;
+    position: relative;
+  }
+  
+  header .manu ul a::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 1px;
+    background-color: black;
+    transition: all 0.3s ease-in-out;
+    clip-path: polygon(0 0, 0% 100%, 100% 100%, 100% 0);
+  }
+  
+  header .manu ul a:hover::before {
+    width: 100%;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  }
+  
+header .manu ul li {
+    margin: 1vw;
+    list-style-type: none;
+}
+
+h1,
+h2,
+p {
+    width: fit-content;
+    margin: auto;
+    text-align: center;
+
+}
+
+header .cart {
+    padding: 1vw;
+}
+
+header .manu .dropdown {
+    position: absolute;
+    background-color: white;    
+    width: fit-content;
+    box-sizing: border-box;
+    padding: 0px;
+    margin-top: 5px;
+    display: none;
+    transition: display 1s ease-in-out;
+}
+
+header .manu .dropdown ul{
+    padding: 0px;
+    font-size: 10px;
+}
+
+.btn {
+    font-size: 22px;
+    background: var(--color1);
+    width: fit-content;
+    font-weight: bold;
+    padding: 10px;
+    color: var(--bg-color);
+    border-radius: 5px;
+    text-align: center;
+    margin: auto;
+}
+
+header .hamburger i {
+    font-size: 2.5em;
+}
+
+p{
+    font-weight: 400;
+}
+header .hamburger {
+    display: none;
+
+}
+
+header .cart1 {
+    display: none;
+}
+
+footer {
+    background-color: rgb(197, 192, 192);
+    margin-top: 0;
+    padding: 3vw;
+}
+
+footer ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-evenly;
+    margin: auto;
+    width: 55vw;
+    margin-bottom: 3vw;
+    align-items: center;
+    font-size: 1vw;
+}
+footer p{
+    margin: auto;
+}
+
+footer a {
+
+    color: black;
+    text-decoration: none;
+}
+@media (max-width:550px) {
+    body {
+        background-position: center center;
+
+    }
+
+    .awards {
+        flex-direction: column;
+        height: auto;
+    }
+
+    header .hamburger .bx-x {
+        display: none;
+    }
+
+    header .hamburger {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+
+    header .manu {
+        display: none;
+    }
+
+    header {
+        flex-wrap: wrap;
+    }
+
+    header .right .hamburger {
+        flex-basis: 100%;
+    }
+
+    header .cart {
+        display: none;
+    }
+    .cart1{
+        margin: 0;
+    }
+
+    .btn {
+        width: 100%;
+        box-sizing: border-box;
+        margin-left: 0;
+    }
+
+    header .cart1 {
+        flex-basis: 96%;
+        display: block;
+        margin:10px  0;
+    }
+    .intro h1{
+        width: 90vw;
+    }
+
+    .testonomial>div {
+        flex-direction: column;
+        justify-content: center;
+
+    }
+
+    .testonomial>div>div {
+        width: fit-content;
+    }
+
+    #test1 .info img,
+    #test2 .info img {
+        width: 15vw;
+        height: 15vw;
+    }
+
+    #test1 .info img,
+    #test2 .info img {
+        margin-right: 10vw;
+    }
+
+    #test1,
+    #test2 {
+        margin-top: 5vh;
+    }
+
+    .testonomial+h1 {
+        font-size: 7vw;
+    }
+
+    .step-info .step {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .step-info .step div {
+        width: 60%;
+        margin-top: 10vw;
+    }
+
+    .services .cols {
+        flex-direction: column;
+    }
+    .services .cols div{
+        width: 80vw;
+        margin: 5vw 0;
+    }
+    footer ul{
+        flex-wrap:wrap;
+        width: 65vw;
+        font-size: 3vw;
+        padding:0;
+    }
+    footer p{
+        font-size:3vw;
+        margin: auto;
+    }
+}
+
+@media (min-width:551px) and (max-width:630px) {
+    body {
+        background-position: center center;
+
+    }
+
+    .awards {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .cart {
+        width: 50%;
+        margin: 3vw 1vw 3vw 2vw;
+    }
+
+    header .manu {
+        display: none;
+    }
+
+    header .hamburger .bx-x {
+        display: none;
+    }
+
+    header .hamburger {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .intro h1{
+        width: 90vw;
+        font-size: 5vw;
+    }
+
+    .testonomial {
+        padding: 5vw;
+        /* display: flex; */
+
+
+    }
+
+    .testonomial>div {
+        flex-direction: column;
+
+    }
+
+    #test1,
+    #test2 {
+        margin-top: 100vh;
+    }
+}
+
+@media (min-width: 631px) and (max-width: 1023px) {
+
+    /* CSS rules for screens between 768px and 1024px */
+    body {
+        background-position: center center;
+
+    }
+
+    header .manu {
+        display: none;
+    }
+
+    header .hamburger .bx-x {
+        display: none;
+    }
+
+    header .hamburger {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+
+}
+

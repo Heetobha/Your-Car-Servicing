@@ -1,0 +1,144 @@
+:root {
+    --color1: #8dc251;
+    --color2: gray;
+    --bg-color: white;
+
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    background-image: url("https://cdn.pixabay.com/photo/2018/09/20/22/23/auto-repair-3691963_960_720.jpg");
+    background-size: cover;
+    overflow-x: hidden;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+}
+p{
+    line-height: 1.5;
+}
+
+.content {
+    background-color: white;
+    padding: 10vw 25vw;
+    box-sizing: border-box;
+}
+
+.main>h1 {
+    background-color: #8dc251;
+    width: 100%;
+    padding: 2vw 0;
+    text-align: center;
+
+}
+
+.content h1 {
+    color: black;
+    background-color: white;
+    padding: 2vw 0;
+    text-align: center;
+}
+
+.owners>div {
+    margin-right: 2vw;
+}
+
+.owners p {
+    margin-top: 2vw;
+    line-height: 1.5;
+}
+
+.owners img {
+    width: 20vw;
+    height: 20vw;
+}
+
+.content .owners {
+    display: flex;
+    margin-bottom: 6vw;
+}
+.logos{
+    display: flex;
+    margin-top: 2vw;
+    justify-content: space-between;
+    align-items: center;
+}
+.logos img{
+    width: 6vw;
+    background-color: #8dc251;
+}
+hr{
+    width:20vw;
+    margin-bottom: 3vw;
+    margin-top: 0vw;
+}
+.expectation{
+    background-color: #8dc251;
+    padding: 2vw 0;
+}
+
+.expectation h1{
+    color: white;
+    margin-bottom: 2vw;
+    padding: 2vw;
+}
+
+.expectation >div{
+    width: 60%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    margin-top:3vw;
+}
+.expectation div div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+.expectation p{
+    margin:2vw 0;
+    color:white;
+    width: fit-content;
+}
+.expectation div img{
+    width: 15vw;
+    height: 15vw;
+    border-radius: 3px;
+    border: 2px solid white;
+}
+.expectation .last img{
+    width:25vw;
+    border: 2px solid white;
+
+}
+#btn{
+    text-align: center;
+    width: fit-content;
+    border: 2px solid white;
+    
+}
+#btn:hover{
+ color: #8dc251;
+ background-color: white;   
+}
+.paraph{
+    color: black;
+    background-color: rgb(250, 242, 242);
+    bottom: 20.8vw;
+    width: 15vw;
+    height: 15vw;
+    font-weight: bolder;
+    position: absolute;
+    line-height: 1.5;
+    padding: 1vw;
+    box-sizing: border-box;
+    border: 2px solid white;
+    display: none !important;
+    z-index: -2;
+}
+#paraph{
+    width: 25vw;
+    bottom:20.9vw;
+}

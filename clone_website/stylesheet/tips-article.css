@@ -1,0 +1,248 @@
+:root {
+    --color1: #8dc251;
+    --color2: gray;
+    --bg-color: white;
+
+}
+
+.main .heading {
+    background-color: #8dc251;
+    padding: 3vw;
+}
+
+.main .heading form {
+    display: flex;
+    width: fit-content;
+    height: 55px;
+    margin: 2vw auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.main .heading div p {
+    width: fit-content;
+    margin: auto;
+    font-size: 12px;
+}
+
+.main .heading div {
+    display: flex;
+    align-items: center;
+    background-color: rgb(13, 78, 7);
+    color: white;
+    width: 12vw;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.img p {
+    position: absolute;
+    background-color: rgb(80, 72, 72);
+    color: white;
+    top: 1vw;
+    right: 1vw;
+    padding: .8vw .4vw .2vw .4vw;
+    font-size: 12px
+}
+
+.main .heading form input {
+    box-sizing: border-box;
+    height: 100%;
+    padding: 18px;
+    width: 30vw;
+    border: 1px solid black
+}
+
+.content {
+    background-color: white;
+    padding: 2vw 0;
+}
+
+.content .img {
+    position: relative;
+}
+
+.content>div {
+    display: flex;
+    width: 94%;
+    margin: auto;
+    margin-top: 2vw;
+    justify-content: space-between;
+}
+
+.content .img img {
+    width: 45vw;
+    border-radius: 6px;
+    height: 20vw;
+
+}
+
+.content .text {
+    width: 45vw;
+}
+
+.content .text p {
+    width: fit-content;
+    text-align: left;
+  
+    line-height: 1.5;
+}
+
+.content h1 {
+    margin: 2vw auto 2vw 0;
+}
+
+
+
+.btn-m {
+    font-weight: bold;
+    border-top: 1px solid black;
+    padding: 5px;
+    cursor: pointer;
+    margin-top: 8px;
+    margin-left: 2vw !important;
+}
+
+.last {
+    margin-top: 4vw !important;
+    display: block !important;
+}
+
+.last .btn {
+    width: 98%;
+}
+
+.details {
+    background-color: #67bb08;
+    color: white;
+    padding: 2vw 31vw;
+    font-size: .9rem;
+    padding-bottom: 10vw;
+    position: relative;
+
+}
+
+.details * {
+    margin-top: 2vw;
+    width: 100%;
+}
+.details .btn{
+    width: fit-content;
+    background-color: #67bb08;
+    border: 2px solid white;
+    border-radius: 50px;
+    transition: font-size .1s ease-in;
+    margin: auto;
+}
+
+
+
+.details .btn:hover {
+    font-size: 1.6em;
+    cursor:pointer;
+
+}
+
+@media (max-width:550px) {
+    .heading {
+        height: 135px;
+    }
+
+    .heading form {
+        display: block !important;
+        width: 50vw !important;
+        height: 70px !important;
+    }
+
+    .heading form input {
+        height: 35px !important;
+        width: 100% !important;
+    }
+
+    .heading form div {
+        width: 100% !important;
+        height: 35px !important;
+    }
+
+    .content>div {
+        display: block;
+    }
+
+    .content>div>div {
+        width: 100%;
+    }
+
+    .content .img img {
+        width: 100%;
+        height: 25vw;
+    }
+
+    .content .text {
+        width: 100%;
+        margin: 5vw auto;
+    }
+    .details {
+        padding: 2%;
+    }
+    .details *{
+        margin: 5vw auto;
+    }
+  
+
+   
+}
+
+@media (min-width:551px) and (max-width:630px) {
+
+    .content>div {
+        display: block;
+        width: 96%;
+    }
+
+    .content>div>div {
+        width: 100%;
+    }
+
+    .content .img img {
+        width: 100%;
+        height: 25vw;
+    }
+
+    .content .text {
+        width: 100%;
+        margin: 5vw auto;
+    }
+
+    .img img {
+        width: 100%;
+    }
+    
+    .details {
+        padding: 8%;
+    }
+}
+
+@media (min-width: 631px) and (max-width: 1023px) {
+
+    .content>div {
+        display: block;
+    }
+
+    .content>div>div {
+        width: 100%;
+    }
+
+    .content .img img {
+        width: 100%;
+        height: 25vw;
+    }
+
+    .content .text {
+        width: 100%;
+        margin: 5vw auto;
+    }
+
+    .details {
+        padding: 10%;
+    }
+}

@@ -1,0 +1,292 @@
+:root {
+    --color1: #8dc251;
+    --color2: gray;
+    --bg-color: white;
+
+}
+.intro>* {
+    width: fit-content;
+    margin: 3vw auto;
+}
+.intro {
+    height: auto;    
+}
+
+.intro h1 {
+    font-size: 4vw;
+    width:60vw;
+    margin: 3vw auto ;
+}
+
+.award-winning {
+    background-color: rgb(207, 201, 201);
+    padding: 5vw;
+}
+
+.award-winning h1 {
+    margin: top;
+
+}
+
+.awards {
+    display: flex;
+    width: 90vw;
+    height: 50vh;
+    margin: 4vw auto;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.awards img {
+    width: 70%;
+    height: 70%;
+}
+
+.testonomial {
+    background-color: white;
+    margin: 0;
+    padding: 10vw;
+    /* display: flex; */
+
+
+}
+
+.testonomial img {
+    width: 5vw;
+    height: 5vw;
+    border-radius: 50%;
+    margin-right: 1vw;
+}
+
+.testonomial p {
+    text-align: left;
+}
+
+.testonomial>div {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 3vw;
+
+}
+
+.testonomial>div>div {
+    width: 30%;
+}
+
+.testonomial #test1 .info,
+.testonomial #test2 .info {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 2vw;
+}
+
+.testonomial+h1 {
+    background-color: #8dc251;
+    color: white;
+    width: 100vw;
+    box-sizing: border-box;
+    text-align: center;
+    padding: 3vw;
+    font-size: 3vw;
+    box-shadow: 1vw 1vw 5vw grey;
+}
+
+.step-info {
+    background-color: white;
+    padding: 3vw;
+}
+
+.step {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 10vw;
+}
+
+.step div {
+    text-align: center;
+    width: 15vw;
+}
+
+.step div p:first-child {
+    background-color: #8dc251;
+    color: white;
+    border-radius: 50%;
+    padding: 7px 11px;
+}
+
+.step div i {
+    color: #8dc251;
+    font-size: 4rem;
+    margin: 1vw 0;
+}
+
+.services {
+    margin-top: 5vw;
+}
+
+.services h1 {
+    text-decoration: underline;
+
+}
+
+.services .cols p {
+    text-align: left;
+    margin: 15px;
+
+}
+
+.services .cols i {
+    margin-left: -20px;
+    font-size: 1.3rem;
+}
+
+.services .cols {
+    display: flex;
+    width: 70%;
+    margin: auto;
+    justify-content: space-between;
+    text-align: left;
+    align-items: center;
+
+}
+
+.services .col1,
+.services .col2 {
+    width: 45%;
+    margin-top: 2vw;
+}
+
+.step-info p {
+    margin-top: 5vw;
+    margin-bottom: 4vw;
+}
+
+@media (max-width:550px) {
+    .awards {
+        flex-direction: column;
+        height: auto;
+    }
+
+
+    .intro h1{
+        width: 90vw;
+    }
+
+    .testonomial>div {
+        flex-direction: column;
+        justify-content: center;
+
+    }
+
+    .testonomial>div>div {
+        width: fit-content;
+    }
+
+    #test1 .info img,
+    #test2 .info img {
+        width: 15vw;
+        height: 15vw;
+    }
+
+    #test1 .info img,
+    #test2 .info img {
+        margin-right: 10vw;
+    }
+
+    #test1,
+    #test2 {
+        margin-top: 5vh;
+    }
+
+    .testonomial+h1 {
+        font-size: 7vw;
+    }
+
+    .step-info .step {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .step-info .step div {
+        width: 60%;
+        margin-top: 10vw;
+    }
+
+    .services .cols {
+        flex-direction: column;
+    }
+    .services .cols div{
+        width: 80vw;
+        margin: 5vw 0;
+    }
+   
+}
+
+@media (min-width:551px) and (max-width:630px) {
+
+    .awards {
+        flex-direction: column;
+        height: auto;
+    }
+    .intro h1{
+        width: 90vw;
+        font-size: 5vw;
+    }
+
+    .testonomial {
+        padding: 5vw;
+        /* display: flex; */
+
+
+    }
+
+    .testonomial>div {
+        flex-direction: column;
+
+    }
+
+    #test1,
+    #test2 {
+        margin-top: 100vh;
+    }
+
+    .testonomial #test1 .info img,
+    .testonomial #test2 .info img {
+        margin-left: 5vw;
+    }
+
+    ;
+
+    #test1 .info img,
+    #test2 .info img {
+        width: 15vw;
+        height: 15vw;
+    }
+
+    .testonomial+h1 {
+        font-size: 7vw;
+    }
+
+    .services .cols {
+        flex-direction: column;
+    }
+}
+
+@media (min-width: 631px) and (max-width: 1023px) {
+
+    /* CSS rules for screens between 768px and 1024px */
+
+    .testonomial {
+        padding: 5vw;
+        /* display: flex; */
+
+
+    }
+
+    .testonomial+h1 {
+        font-size: 7vw;
+    }
+}

@@ -1,0 +1,39 @@
+:root {
+    --color1: #8dc251;
+    --color2: gray;
+    --bg-color: white;
+
+}
+
+.main h1{
+    background-color: #8dc251;
+    width: 100%;
+    margin: 0px;
+    padding: 20px;
+    color:var(--bg-color)
+}
+.main{
+    background-color: white;
+}
+.content P{
+    text-align: left;
+    font-size: 20px;
+    line-height: 1.5;
+    margin: 0;
+
+}
+.content li{
+    font-size: 20px;
+    list-style-type: disc;
+}
+
+.content{
+    width: 84%;
+    padding: 20px 0;
+    margin: auto;
+}
+
+td,th,table{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
